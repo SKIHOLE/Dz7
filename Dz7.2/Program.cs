@@ -16,6 +16,7 @@ namespace Dz7._2
                 Console.WriteLine($"Введіть інформацію про {i + 1}-й поїзд:");
                 Console.Write("Назва пункту призначення: ");
                 string destination = Console.ReadLine();
+                trains[i].Destination = destination;
                 Console.Write("Номер поїзда: ");
                 int.TryParse(Console.ReadLine(), out int trainNumb);
                 trains[i].TrainNumber = trainNumb;
